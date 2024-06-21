@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_default"
+        android:paddingStart="@dimen/dimen20dp"
+        android:paddingEnd="@dimen/dimen20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btn_add_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen100dp"
+                android:background="@drawable/backgorund_button_two"
+                android:text="@string/txt_add_item"
+                android:textColor="@color/white_color"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_list_entered"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen100dp"
+                android:layout_marginTop="@dimen/dimen50dp"
+                android:background="@drawable/backgorund_button_two"
+                android:text="@string/txt_list_item_entered"
+                android:textColor="@color/white_color"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_add_item" />
+
+            <Button
+                android:id="@+id/btn_list_delivered"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen100dp"
+                android:layout_marginTop="@dimen/dimen50dp"
+                android:background="@drawable/backgorund_button_two"
+                android:text="@string/txt_list_item_delivered"
+                android:textColor="@color/white_color"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_list_entered" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

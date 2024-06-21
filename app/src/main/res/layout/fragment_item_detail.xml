@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_default">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="@dimen/dimen22dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/gilroy_bxtra_bold"
+            android:textAlignment="center"
+            android:textColor="@color/white_color"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Daniel Sebastian Montoto" />
+
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/gilroy_bxtra_bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/white_color"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name"
+            tools:text="Teléfono: " />
+
+        <TextView
+            android:id="@+id/txt_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/gilroy_bxtra_bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/white_color"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_phone"
+            tools:text="Artículo: " />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/gilroy_bxtra_bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/white_color"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_item"
+            tools:text="Fecha: " />
+
+        <TextView
+            android:id="@+id/txt_problem_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/gilroy_bxtra_bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/white_color"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_date"
+            tools:text="Problema:" />
+
+        <EditText
+            android:id="@+id/edt_budget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/background_input"
+            android:fontFamily="@font/gilroy_light"
+            android:hint="@string/txt_hint_budget"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/black_color"
+            app:layout_constraintEnd_toStartOf="@id/btn_send_budget"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_problem_description" />
+
+        <Button
+            android:id="@+id/btn_send_budget"
+            android:layout_width="0dp"
+            android:layout_height="37.6277dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/gilroy_light"
+            android:singleLine="true"
+            android:text="@string/txt_send_budget"
+            android:textAlignment="center"
+            android:textColor="@color/white_color"
+            android:textColorHint="@color/white_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edt_budget"
+            app:layout_constraintTop_toBottomOf="@id/txt_problem_description" />
+
+        <LinearLayout
+            android:id="@+id/layout_multimedia"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="@dimen/dimen12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/dimen12dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_budget">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_default"
+                    android:layout_width="150dp"
+                    android:layout_height="185dp"
+                    android:layout_alignStart="@+id/rv_files"
+                    android:layout_alignEnd="@+id/rv_files"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="32dp"
+                    app:srcCompat="@drawable/ic_multimedia" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_files"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_mark_delivered"
+            android:layout_width="300dp"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/gilroy_bxtra_bold"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:singleLine="true"
+            android:text="@string/txt_mark_as_delivered"
+            android:textAlignment="center"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_multimedia" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

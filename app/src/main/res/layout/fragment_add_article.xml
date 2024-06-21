@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_default">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_marginTop="@dimen/dimen22dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_for_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dimen22dp">
+
+            <Button
+                android:id="@+id/btn_add_images"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_button"
+                android:fontFamily="@font/gilroy_light"
+                android:textAllCaps="false"
+                android:text="@string/txt_add_photos"
+                android:textColor="@color/white_color"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/input_problem_description"
+                app:layout_constraintTop_toBottomOf="@id/input_problem_description" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="300dp"
+                android:layout_height="@dimen/dimen60dp"
+                android:layout_marginTop="@dimen/dimen22dp"
+                android:background="@drawable/background_button"
+                android:fontFamily="@font/gilroy_bxtra_bold"
+                android:text="@string/txt_save"
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_multimedia" />
+
+            <EditText
+                android:id="@+id/input_client_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_input"
+                android:fontFamily="@font/gilroy_light"
+                android:hint="@string/txt_client_name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_id_item" />
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_input"
+                android:fontFamily="@font/gilroy_light"
+                android:hint="@string/txt_hint_phone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_client_name" />
+
+            <EditText
+                android:id="@+id/input_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_input"
+                android:fontFamily="@font/gilroy_light"
+                android:hint="@string/txt_article"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_phone" />
+
+            <EditText
+                android:id="@+id/input_problem_description"
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_input"
+                android:fontFamily="@font/gilroy_light"
+                android:gravity="start"
+                android:hint="@string/txt_hint_problem_description"
+                android:imeOptions="actionSend"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="300"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_article" />
+
+            <EditText
+                android:id="@+id/input_id_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_input"
+                android:enabled="false"
+                android:fontFamily="@font/gilroy_light"
+                android:hint="@string/txt_hint_id_loading"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/black_color"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/layout_multimedia"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_add_images">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_default"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_alignStart="@+id/rv_files"
+                        android:layout_alignEnd="@+id/rv_files"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="51dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="32dp"
+                        app:srcCompat="@drawable/ic_multimedia" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_files"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

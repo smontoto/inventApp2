@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">InventApp</string>
+    <string name="app_name_title">Inventario App</string>
+    <string name="txt_search">Buscar</string>
+    <string name="cliente">Cliente</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_whatsapp">Hola. Le escribo por el articulo que dejó en reparación. El precio para repararlo es de: $%1$s</string>
+    <string name="cellphone_whatsapp">+54%1$s</string>
+    <string name="error_not_app_whatsapp">WhatsApp no está instalado en su telefono</string>
+    <string name="uri_whatsapp">https://wa.me/%1$s/?text=%2$s</string>
+
+    <string name="txt_add_item">ALTA ARTICULO</string>
+    <string name="txt_list_item_entered">LISTAR INGRESOS</string>
+    <string name="txt_list_item_delivered">LISTAR ENTREGADOS</string>
+    <string name="title_add_article">Agregar artículo</string>
+    <string name="txt_add_photos">Cargar fotos</string>
+    <string name="txt_save">GUARDAR</string>
+    <string name="txt_client_name">Nombre Cliente</string>
+    <string name="txt_hint_phone">Telefono sin 0 ni 15</string>
+    <string name="txt_article">Artículo</string>
+    <string name="txt_hint_problem_description">Descripcion del problema</string>
+    <string name="txt_hint_id_loading">ID: cargando…</string>
+    <string name="txt_title_list_articles">Listado de articulos</string>
+    <string name="txt_title_list_articles_entered">Nuevos articulos</string>
+    <string name="txt_title_list_articles_delivered">Articulos entregados</string>
+    <string name="txt_hint_buscar">Buscar…</string>
+    <string name="txt_title_detail_article">Detalle de artículo</string>
+    <string name="txt_hint_budget">Presupuesto</string>
+    <string name="txt_send_budget">Enviar presupuesto</string>
+    <string name="txt_mark_as_delivered">Marcar como entregado</string>
+
+    <!-- For show Item Details -->
+    <string name="label_cellphone">Teléfono: %1$s</string>
+    <string name="label_article">Artículo: %1$s</string>
+    <string name="label_date">Fecha ingreso: %1$s</string>
+    <string name="label_problem_description">Problema: %1$s</string>
+    <string name="txt_articles_not_found">Sin artículos</string>
+
+    <!-- For Error -->
+    <string name="txt_retry">Volver a intentar</string>
+</resources>
